@@ -223,7 +223,7 @@ li {
 * Pentagram Wordmark
 */
 .wordmark {
-  margin: 0;
+  margin: 0px 800px 0px 0px;
   display: inline-flex;
   flex-direction: column;
   line-height: 0.85;
@@ -288,7 +288,7 @@ li {
 */
 .page-header {
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
   padding: 2rem;
 }
@@ -323,13 +323,13 @@ li {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 .main-nav__list li {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: flex-start;
   align-content: flex-start;
 }
@@ -599,30 +599,25 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: "helvetica", sans-serif;
-  line-height: 1.4em;
+  line-height: 2em;
   width: 100%;
   line-height: 1;
 }
-/*--------------captions--------
+/*--------------captions--------*/
 
 .caption {
 	position: relative;
-	max-width: 400px;
+	max-width: 700px;
 }
 .caption figcaption {
 	position: absolute;
-	bottom: 5px;
-	margin: 0 auto;
-	padding: 10px;
-    background: green;
-    width: 380px;
-    color:white;
-	text-align: center;
+	bottom: -15px;
+  padding: 0px;
+    width: 700px;
+    color:var(--black);
+	text-align: left;
 }
-.caption .popo {
-    background: rgba(5, 5, 5, 0.433);
-}
---*/
+
 /*------------- grid ------------*/
 .wrapper {
   display: grid;
@@ -636,10 +631,9 @@ body {
   color: var(--white);
   grid-column-start: 1;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 5;
   gap: 1rem;
-  padding: 10px;
-  margin: 10px;
+  margin: 20px 10px;
 }
 .box2,
 .box3,
