@@ -418,6 +418,19 @@ li {
 /**
 * .page-footer
 */
+
+.view-all a {
+  color: darkgray;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .6em;
+  margin: 0 auto;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
 .page-footer {
   font-family: var(--font-sans-serif);
   padding: 2rem;
@@ -425,18 +438,10 @@ li {
   
 }
 .page-footer a {
-  color: var(--black);
   text-decoration: none;
   color: darkgray;
 }
-.page-footer .icon--circle {
-  color: var(--white);
-}
-.page-footer__heading {
-  margin: 0;
-  font-size: 1rem;
-  color: darkgray;
-}
+
 @media (min-width: 50rem) {
   .page-footer {
     display: flex;
@@ -456,10 +461,11 @@ li {
 * .social-list
 */
 .social-list {
-  margin: 0;
-  padding: 0;
+  margin: 10px auto;
+  padding: 10px;
   display: flex;
   list-style: none;
+  justify-content: flex-start;
 }
 .social-list > * {
   margin-right: 0.25rem;
@@ -471,15 +477,14 @@ li {
   color: darkgray;
   font-family: var(--font-sans-serif);
   font-size: 1.2em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 10px;
+  text-decoration: none;
+
 }
 
 /**
 * .social-list__item
-*/
+
 .icon--circle {
   background: var(--black);
   width: 1.75rem;
@@ -502,7 +507,7 @@ li {
 .icon--circle:hover a {
   color: var(--black);
 }
-
+*/
 /*********************************
 * TEMPLATES
 **/
@@ -623,17 +628,20 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 100px;
+  margin: 0 auto;
+  padding: 60px;
 
 }
 
 .box1 {
-  background-color:#cc3333;
+  background-color:white;
   color: var(--white);
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 5;
   gap: 1rem;
-  margin: 20px 10px;
+  margin: 0px 10px 0px 0px;
+  padding: 0px;
 }
 .box2,
 .box3,
@@ -642,6 +650,5 @@ body {
   background-color:#cc3333; 
   color: var(--white); 
   gap: 1rem;
-  padding: 10px;
-  margin: 10px;
+  margin: 0px 10px 20px 10px;
 }
