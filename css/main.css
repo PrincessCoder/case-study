@@ -12,6 +12,8 @@
 
 html {
   box-sizing: border-box;
+  --font-serif: "helvetica", sans-serif;
+  --font-sans-serif: "helvetica", sans-serif;
 }
 *,
 *:before,
@@ -24,6 +26,11 @@ body {
   font-weight: 400;
   color: var(--gray-dark);
   line-height: 1.666;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.4em;
+  width: 100%;
+  line-height: 1;
 }
 
 h1,
@@ -60,6 +67,53 @@ img,
 video {
   max-width: 100%;
   display: block;
+}
+
+/*---------------header------------*/
+
+.hero {
+
+}
+
+.header {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  float: left;
+}
+
+.header-logo {
+  margin: 0 auto;
+}
+
+.header_nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90px;
+  margin: 0 auto;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: gray;
+}
+
+a:hover {
+  color: rgb(61, 61, 61);
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-flex;
+  flex: 1 0 auto;
 }
 
 /***
@@ -270,8 +324,6 @@ video {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
-
 }
 .main-nav__list li {
   margin: 0;
@@ -538,3 +590,59 @@ video {
   width: 100%;
 }
 
+html {
+  --font-serif: "helvetica", sans-serif;
+  --font-sans-serif: "helvetica", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "helvetica", sans-serif;
+  line-height: 1.4em;
+  width: 100%;
+  line-height: 1;
+}
+
+/*---------------header------------*/
+
+
+
+/*--------------captions----------*/
+
+.caption {
+	position: relative;
+	max-width: 400px;
+}
+.caption figcaption {
+	position: absolute;
+	bottom: 5px;
+	margin: 0 auto;
+	padding: 10px;
+    background: green;
+    width: 380px;
+    color:white;
+	text-align: center;
+}
+.caption .popo {
+    background: rgba(5, 5, 5, 0.433);
+}
+/*------------- grid ------------*/
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.box2 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
