@@ -288,7 +288,6 @@ li {
 */
 .page-header {
   display: flex;
-  align-items: right;
   justify-content: space-between;
   padding: 2rem;
 }
