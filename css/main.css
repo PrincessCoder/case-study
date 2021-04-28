@@ -435,7 +435,6 @@ li {
   color: var(--white);
   display: flex;
   align-items: flex-end;
-  
 }
 
 /**
@@ -663,7 +662,7 @@ body {
   line-height: 1;
 }
 /*--------------captions--------*/
-
+/*-
 .caption {
 	position: relative;
 	max-width: 700px;
@@ -675,7 +674,7 @@ body {
     width: 700px;
     color:var(--black);
 	text-align: left;
-}
+}-*/
 
 /*------------- grid ------------*/
 .portfolio-container {
@@ -689,14 +688,12 @@ body {
 }
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 10px;
-
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: auto;
 }
-
 .box1 {
-  background-color:white;
-  color: var(--white);
+  color: var(--black);
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 5;
@@ -705,24 +702,40 @@ body {
   padding: 0px;
   align-self: stretch;
 }
-.box1-right{
-  background-color:white;
-  color: var(--white);
-  grid-column-start: 3;
-  grid-row-start: 1;
-  grid-row-end: 5;
-  gap: 1rem;
-  margin: 0px 10px 0px 0px;
-  padding: 0px;
-  align-self: stretch;
-}
-.box2,
-.box3,
-.box4,
-.box5 { 
-  color: var(--red); 
+.box2 { 
+  color: var(--black); 
   grid-column-start: 2;
   grid-row-start: 1;
   grid-row-end: 5;
   gap: 1rem;
+  margin: 0 10px;
+  padding: 0 0 10px 0;
+  font-size: 1.25em;
+}
+.box3 { 
+  color: var(--black); 
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  gap: 1rem;
+  margin: 0 10px;
+  font-size: 1.25em;
+}
+.box4 { 
+  color: var(--black); 
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 5; 
+  gap: 1rem;
+  margin: 0 10px;
+  font-size: 1.25em;
+}
+.box5 { 
+  color: var(--black); 
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  gap: 1rem;
+  margin: 0 10px;
+  font-size: 1.25em; 
 }
