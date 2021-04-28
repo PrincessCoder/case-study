@@ -435,6 +435,7 @@ li {
   color: var(--white);
   display: flex;
   align-items: flex-end;
+  margin: 0 0 0 100px;
 }
 
 /**
