@@ -470,10 +470,17 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 1em;
+  }
+  .page-footer__heading{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 1.2em;
   }
   .page-footer__links {
     display: flex;
     align-items: center;
+    font-size: 1.2em;
   }
   .page-footer__links > * {
     margin: 0 1rem 0 0;
